@@ -73,11 +73,11 @@ LANGUAGES = {
 }
 
 # secret_key for sessions module
-SESSION_SECRET = hashlib.sha1('project-name').hexdigest()
+SESSION_SECRET = hashlib.sha1('map-lo-ad').hexdigest()
 
 # xmpp IDs
-CHAT_SERVER_ID = 'project-name@appspot.com'
-CHAT_CLIENT_ID = '@project-name.appspotchat.com'
+CHAT_SERVER_ID = 'map-lo-ad@appspot.com'
+CHAT_CLIENT_ID = '@map-lo-ad.appspotchat.com'
 
 PROVIDER_NAME = {
   'google'  : 'Google',
@@ -133,3 +133,7 @@ USER_ATTRIBUTES = {
     'gender'        : '',
   },
 }
+
+DATE_TIME_FORMAT = '%d-$m-%Y %h-%m-%s'
+DATE_FORMAT = '%d-$m-%Y'
+TIME_FORMAT = '%h-%m-%s'
