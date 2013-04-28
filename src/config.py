@@ -14,27 +14,27 @@ from webapp2_extras import i18n
 # Google APIs
 # https://developers.google.com/accounts/docs/OAuth2WebServer
 # http://code.google.com/apis/console
-GOOGLE_APP_ID = ''
-GOOGLE_APP_SECRET = ''
+GOOGLE_APP_ID = '241280104740.apps.googleusercontent.com'
+GOOGLE_APP_SECRET = 'dMN-3GW-BSpHSqia2cxnufjy'
 
 # Facebook auth apis
 # https://developers.facebook.com/docs/authentication/server-side/
 # https://developers.facebook.com/apps
-FACEBOOK_APP_ID = ''
-FACEBOOK_APP_SECRET = ''
+FACEBOOK_APP_ID = '165389813609241'
+FACEBOOK_APP_SECRET = 'aff65e150732ca64d347ff84a8a3110f'
 
 # https://www.linkedin.com/secure/developer
-LINKEDIN_CONSUMER_KEY = ''
-LINKEDIN_CONSUMER_SECRET = ''
+LINKEDIN_CONSUMER_KEY = '79njdpdotx10'
+LINKEDIN_CONSUMER_SECRET = 'QxdEAapTEqSulsBR'
 
 # https://manage.dev.live.com/AddApplication.aspx
 # https://manage.dev.live.com/Applications/Index
-WL_CLIENT_ID = ''
-WL_CLIENT_SECRET = ''
+WL_CLIENT_ID = '00000000400EC633'
+WL_CLIENT_SECRET = 'wYrMj8ALIxcCBzPu87dMTMPVlecU7SI8'
 
 # https://dev.twitter.com/apps
-TWITTER_CONSUMER_KEY = ''
-TWITTER_CONSUMER_SECRET = ''
+TWITTER_CONSUMER_KEY = '4HTUy9n3PQKj8a3xGHiXVA'
+TWITTER_CONSUMER_SECRET = 'pNO5STCOBpyKxhAddksp8QUwboatabXJBMCEP7Lz1Y'
 
 # https://foursquare.com/developers/apps
 FOURSQUARE_CLIENT_ID = ''
@@ -87,7 +87,7 @@ PROVIDER_NAME = {
   'twitter' : 'Twitter',
 }
 
-GOOGLE_API_KEY = ''
+GOOGLE_API_KEY = 'AIzaSyAAM1DrbWLf4ioEKUtfscnJSBE4jftIlGo'
 
 USER_ATTRIBUTES = {
   'google': {
