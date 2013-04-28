@@ -1,0 +1,12 @@
+﻿UPLOAD:
+python c:\dev\gae\appcfg.py update ../src
+
+BABEL extract:
+pybabel extract -F babel.cfg -o messages.pot ../src
+
+BABEL init:
+pybabel init -l sr -d ../src/locale -i messages.pot
+pybabel update -l sr -d ../src/locale -i messages.pot
+
+BABEL compile:
+pybabel compile -f -d ../src/locale

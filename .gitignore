@@ -1,0 +1,12 @@
+*.py[cod]
+
+# Aptana
+.settings/
+.project
+.pydevproject
+
+# Configuration file
+config.py
+
+# Translation files
+*.po

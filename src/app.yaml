@@ -1,0 +1,55 @@
+# Python Application Configuration
+# https://developers.google.com/appengine/docs/python/config/appconfig
+application: project-name
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+
+# Third-party Libraries in Python 2.7
+# http://code.google.com/appengine/docs/python/tools/libraries27.html
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
+- name: lxml
+  version: latest
+
+
+# Uploading and Downloading Data
+# http://code.google.com/appengine/docs/python/tools/uploadingdata.html
+builtins:
+- remote_api: on
+
+
+handlers:
+# static content handlers  
+- url: /(favicon\.ico)
+  mime_type: image/png
+  static_files: static/\1
+  upload: static/favicon\.ico
+
+- url: /(robots\.txt)
+  static_files: static/\1
+  upload: static/robots\.txt
+
+- url: /(images|styles|scripts)/(.*)
+  static_files: static/\1/\2
+  upload: static/(images|styles|scripts)/(.*)
+
+# dynamic handlers  
+- url: .*
+  script: router.app
+
+
+# XMPP Instant Messages
+# https://developers.google.com/appengine/docs/python/xmpp/overview
+inbound_services:
+#- warmup
+
+skip_files:
+- ^(.*/)?.*\.py[co]
+- ^(.*/)?.*\.bak$
+- ^(.*/)?.*\.po$
